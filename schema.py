@@ -21,7 +21,3 @@ class Query:
 
 
 schema = strawberry.Schema(query=Query)
-
-if __name__ == "__main__":
-    port = os.getenv("PORT", "8080")
-    strawberry.server(schema, port=int(port))
