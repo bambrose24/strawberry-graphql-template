@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 8080
 
 # Run the server
-CMD ["strawberry", "server" "schema"]
+CMD ["strawberry", "server", "schema"]
