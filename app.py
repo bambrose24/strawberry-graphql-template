@@ -10,5 +10,7 @@ app.add_url_rule(
     view_func=GraphQLView.as_view("graphql_view", schema=schema),
 )
 
+app.get("/", lambda: "ok")
+
 if __name__ == "__main__":
     app.run()
