@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose the port the app runs on via the PORT variable
-EXPOSE 8080
+EXPOSE 8000
 
 # Run the server
 CMD ["strawberry", "server", "schema"]
