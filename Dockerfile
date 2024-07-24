@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose the port the app runs on via the PORT variable
-EXPOSE $PORT
+EXPOSE 8080
 
 # Run the server
 CMD ["python", "schema.py"]
