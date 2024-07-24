@@ -13,8 +13,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the current directory contents into the container at /usr/src/app
 COPY . .
 
-# Expose the port the app runs on
-EXPOSE 8080
+# Expose the port the app runs on via the PORT variable
+EXPOSE $PORT
 
 # Run the server
 CMD ["python", "schema.py"]
